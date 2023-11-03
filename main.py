@@ -44,3 +44,25 @@ for url in urls:
     phone_numbers = find_phone_numbers(url)
     for number in phone_numbers:
         print(number)
+
+
+
+# import requests
+# from bs4 import BeautifulSoup
+# import re
+
+# def find_phone_numbers(url):
+#     response = requests.get(url)
+#     soup = BeautifulSoup(response.text, 'html.parser')
+#     text = soup.get_text()
+#     numbers = re.findall(
+#       r'(\+7[\-\s]?\(?\d{3}\)?[\-\s]?\d{3}[\-\s]?\d{2}[\-\s]?\d{2}|\d{1}\d{3}\d{3}\d{2}\d{2}|8[\-\s]?\(?\d{3}\)?[\-\s]?\d{3}[\-\s]?\d{2}[\-\s]?\d{2})',
+#       text)
+#     return phone_numbers
+
+# urls = ['https://hands.ru/company/about', 'https://repetitors.info']
+
+# for url in urls:
+#     phone_numbers = find_phone_numbers(url)
+#     for number in phone_numbers:
+#         print(number)
